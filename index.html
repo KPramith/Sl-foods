@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taste of Sri Lanka - Authentic Sri Lankan Cuisine</title>
+        <!-- Add Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- AOS CSS and JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    </head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-amber-600">Taste of Sri Lanka</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-amber-600">Home</a>
+                    <a href="#about" class="hover:text-amber-600">About</a>
+                    <a href="#signature" class="hover:text-amber-600">Signature Dishes</a>
+                    <a href="#desserts" class="hover:text-amber-600">Desserts</a>
+                    <a href="#contact" class="hover:text-amber-600">Contact</a>
+                </div>
+                <button class="md:hidden" onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#home" class="block py-2 px-4 text-sm hover:bg-amber-600 hover:text-white">Home</a>
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-amber-600 hover:text-white">About</a>
+            <a href="#signature" class="block py-2 px-4 text-sm hover:bg-amber-600 hover:text-white">Signature Dishes</a>
+            <a href="#desserts" class="block py-2 px-4 text-sm hover:bg-amber-600 hover:text-white">Desserts</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-amber-600 hover:text-white">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 bg-gradient-to-b from-amber-50 to-white">
+        <div class="container mx-auto px-6 py-16">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
+                        Experience the Rich Flavors of <span class="text-amber-600">Sri Lanka</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        A vibrant fusion of flavors, colors, and traditions shaped by the island's rich cultural heritage.
+                    </p>
+                    <button class="bg-amber-600 text-white px-8 py-3 rounded-full hover:bg-amber-700 transition duration-300">
+                        Explore Our Cuisine
+                    </button>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0" data-aos="fade-left">
+                    <img src="img/sl.jpg" alt="Sri Lankan Food Spread" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+                    <img src="img/chicken-stir-fried-chili-along-with-bell-pepper-tomatoes-carrots.jpg" alt="Spices of Sri Lanka" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-6">The Essence of Sri Lankan Cuisine</h2>
+                    <p class="text-gray-600 mb-6">
+                        Sri Lankan food revolves around rice and curry, with each dish featuring its own distinctive blend of spices. 
+                        Our cuisine uses locally sourced spices like cinnamon, cloves, cardamom, cumin, coriander, and turmeric, 
+                        creating a rich tapestry of flavors that make each dish unique.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="text-center p-4 bg-amber-50 rounded-lg">
+                            <h3 class="font-bold text-amber-600">Spices</h3>
+                        </div>
+                        <div class="text-center p-4 bg-amber-50 rounded-lg">
+                            <h3 class="font-bold text-amber-600">Tradition</h3>
+                        </div>
+                        <div class="text-center p-4 bg-amber-50 rounded-lg">
+                            <h3 class="font-bold text-amber-600">Heritage</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Dishes -->
+    <section id="signature" class="bg-amber-50 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Signature Dishes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Rice and Curry -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+                    <img src="img/rice.jpg" alt="Rice and Curry" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Rice and Curry</h3>
+                        <p class="text-gray-600 mb-4">
+                            A traditional meal featuring rice with multiple curries, pol sambol, and mallung.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Hoppers -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/hoppers.jpg" alt="Hoppers" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Hoppers</h3>
+                        <p class="text-gray-600 mb-4">
+                            Bowl-shaped pancakes made from fermented rice flour and coconut milk.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Kottu Roti -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/kottu.jpg" alt="Kottu Roti" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Kottu Roti</h3>
+                        <p class="text-gray-600 mb-4">
+                            Popular street food made by stir-frying shredded flatbread with spices and vegetables.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desserts Section -->
+    <section id="desserts" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Traditional Desserts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Watalappam -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex items-center" data-aos="fade-right">
+                    <img src="img/watalappan.jpg" alt="Watalappam" class="w-32 h-32 rounded-full object-cover mr-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Watalappam</h3>
+                        <p class="text-gray-600">
+                            A Malay-inspired custard made from coconut milk, jaggery, eggs, and aromatic spices.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Kiribath -->
+                <div class="bg-white rounded-lg shadow-lg p-6 flex items-center" data-aos="fade-left">
+                    <img src="img/milkrice.jpg" alt="Kiribath" class="w-32 h-32 rounded-full object-cover mr-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Kiribath</h3>
+                        <p class="text-gray-600">
+                            Ceremonial milk rice cut into diamond shapes, served with lunu miris or jaggery.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-amber-50 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Get in Touch</h2>
+            <div class="max-w-lg mx-auto">
+                <form class="space-y-6" data-aos="fade-up">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Name</label>
+                        <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-amber-600">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-amber-600">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Message</label>
+                        <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-amber-600" rows="4"></textarea>
+                    </div>
+                    <button class="w-full bg-amber-600 text-white px-6 py-3 rounded-full hover:bg-amber-700 transition duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold text-amber-600">Taste of Sri Lanka</h3>
+                    <p class="mt-2">Experience authentic Sri Lankan cuisine</p>
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-12">
+                    <div class="mb-6 md:mb-0">
+                        <h4 class="font-bold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="hover:text-amber-600">Home</a></li>
+                            <li><a href="#about" class="hover:text-amber-600">About</a></li>
+                            <li><a href="#signature" class="hover:text-amber-600">Signature Dishes</a></li>
+                            <li><a href="#desserts" class="hover:text-amber-600">Desserts</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="hover:text-amber-600">Facebook</a>
+                            <a href="#" class="hover:text-amber-600">Instagram</a>
+                            <a href="#" class="hover:text-amber-600">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2024 Taste of Sri Lanka. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                const menu = document.getElementById('mobile-menu');
+                if (!menu.classList.contains('hidden')) {
+                    menu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
